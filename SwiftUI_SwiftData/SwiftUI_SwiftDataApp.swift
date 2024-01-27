@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct SwiftUI_SwiftDataApp: App {
@@ -13,5 +14,7 @@ struct SwiftUI_SwiftDataApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: DataItem.self) // create a container with dataitem type that i wannt to pass in
     }
 }
+
