@@ -98,34 +98,51 @@ struct ContentView: View {
     }
     
     
-    private func recognizeText(image: UIImage?) async {
-        guard let cgImage = image?.cgImage else {
-            fatalError("could not get cgImage")
-        }
-        
-        let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+    private func createTextDetectionRequest(recognitionLanguages: [String]) -> VNRecognizeTextRequest {
         let request = VNRecognizeTextRequest { request, error in
-            guard let observeations = request.results as? [VNRecognizedTextObservation],
-                  error == nil else {
+            guard let observations = request.results as? [VNRecognizedTextObservation], error == nil else {
+                print("Error during text recognition: \(error?.localizedDescription ?? "Unknown error")")
                 return
             }
-            let text = observeations.compactMap ({
-                $0.topCandidates(1).first?.string
-            }).joined(separator: ", ")
-            
 
-            
+            let recognizedTextDetails = observations.map { observation -> String in
+                // Extracting information from each observation
+                let topCandidate = observation.topCandidates(1).first
+                let text = topCandidate?.string ?? "No text"
+//                let confidence = topCandidate?.confidence ?? 0.0
+//                let boundingBox = observation.boundingBox
+//
+//                // Print the information
+//                print("Text: \(text) \n Confidence: \(confidence) \n BoundingBox: \(boundingBox) \n\n")
+//                
+                return text
+            }.joined(separator: ", ")
+
             DispatchQueue.main.async {
-                label.text = text
+                label.text = recognizedTextDetails
             }
         }
-        
-        request.recognitionLanguages = ["en"]
+
+        // Set recognition parameters
+        request.recognitionLanguages = recognitionLanguages
         request.recognitionLevel = .accurate
+
+        return request
+    }
+    
+    
+    private func recognizeText(image: UIImage?) async {
+        guard let cgImage = image?.cgImage else {
+            fatalError("Could not get cgImage from the provided UIImage")
+        }
+
+        let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+        let textDetectionRequest = createTextDetectionRequest(recognitionLanguages: ["en"])
+
         do {
-            try handler.perform([request])
+            try handler.perform([textDetectionRequest])
         } catch {
-            print(error)
+            print("Error during text recognition: \(error.localizedDescription)")
         }
     }
 }
