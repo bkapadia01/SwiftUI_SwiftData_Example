@@ -7,15 +7,24 @@
 
 import Foundation
 import SwiftData
+import SwiftUI
 
 @Model
 class DataItem: Identifiable {
     var id: String
     var name: String
+    @Attribute(.externalStorage) var photo: Data?
     
-    init(name: String)
+    init(name: String, photo: Data?)
     {
         self.id = UUID().uuidString
         self.name = name
+        self.photo = photo
+    }
+    
+    
+    func defaultImage() -> Image {
+        return Image("defaultImage")
     }
 }
+
