@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "95D1A64C-8ECD-4771-A309-607C0333B106"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "667902BE-CB5F-4C77-B628-A19547C2622C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUI_SwiftData/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "addItem()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "667902BE-CB5F-4C77-B628-A19547C2622C - 503eeaea6af19202"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SwiftUI_SwiftData.ContentView.addItem() async -&gt; ()"
+                  moduleName = "SwiftUI_SwiftData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bkapadia/dev/SwiftUI_SwiftData/SwiftUI_SwiftData/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "716">
+               </Location>
+               <Location
+                  uuid = "667902BE-CB5F-4C77-B628-A19547C2622C - a272d8d913692000"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for SwiftUI_SwiftData.ContentView.addItem() async -&gt; ()"
+                  moduleName = "SwiftUI_SwiftData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bkapadia/dev/SwiftUI_SwiftData/SwiftUI_SwiftData/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  uuid = "667902BE-CB5F-4C77-B628-A19547C2622C - d7f343d22eaa7ff7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for SwiftUI_SwiftData.ContentView.addItem() async -&gt; ()"
+                  moduleName = "SwiftUI_SwiftData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bkapadia/dev/SwiftUI_SwiftData/SwiftUI_SwiftData/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "667902BE-CB5F-4C77-B628-A19547C2622C - 35c60ecfbc007606"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for SwiftUI_SwiftData.ContentView.addItem() async -&gt; ()"
+                  moduleName = "SwiftUI_SwiftData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bkapadia/dev/SwiftUI_SwiftData/SwiftUI_SwiftData/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "667902BE-CB5F-4C77-B628-A19547C2622C - 4034543593eb6d05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for SwiftUI_SwiftData.ContentView.addItem() async -&gt; ()"
+                  moduleName = "SwiftUI_SwiftData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bkapadia/dev/SwiftUI_SwiftData/SwiftUI_SwiftData/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "424">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
