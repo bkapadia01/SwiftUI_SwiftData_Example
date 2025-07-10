@@ -12,13 +12,13 @@ import SwiftUI
 @Model
 class DataItem: Identifiable {
     var id: String
-    var name: String
+    var textFromImage: String
     @Attribute(.externalStorage) var photo: Data?
     
-    init(name: String, photo: Data?)
+    init(textFromImage: String, photo: Data?)
     {
         self.id = UUID().uuidString
-        self.name = name
+        self.textFromImage = textFromImage
         self.photo = photo
     }
     
