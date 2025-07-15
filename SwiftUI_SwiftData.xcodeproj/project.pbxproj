@@ -13,6 +13,10 @@
 		C307FD112B438C46008DC4FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C307FD102B438C46008DC4FB /* Preview Assets.xcassets */; };
 		C307FD1B2B438C46008DC4FB /* SwiftUI_SwiftDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307FD1A2B438C46008DC4FB /* SwiftUI_SwiftDataTests.swift */; };
 		C307FD342B438CB6008DC4FB /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307FD332B438CB6008DC4FB /* DataItem.swift */; };
+		C38736542B72F30D0031E91A /* TextRecognitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38736532B72F30D0031E91A /* TextRecognitionViewModel.swift */; };
+		C387365A2B742ED80031E91A /* RecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38736592B742ED80031E91A /* RecordRow.swift */; };
+		C387365C2B7434CA0031E91A /* RecordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C387365B2B7434CA0031E91A /* RecordDetailView.swift */; };
+		C387365E2B74439F0031E91A /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C387365D2B74439F0031E91A /* RecordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		C307FD1A2B438C46008DC4FB /* SwiftUI_SwiftDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SwiftDataTests.swift; sourceTree = "<group>"; };
 		C307FD202B438C46008DC4FB /* SwiftUI_SwiftDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_SwiftDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C307FD332B438CB6008DC4FB /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
+		C38736532B72F30D0031E91A /* TextRecognitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognitionViewModel.swift; sourceTree = "<group>"; };
+		C38736592B742ED80031E91A /* RecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRow.swift; sourceTree = "<group>"; };
+		C387365B2B7434CA0031E91A /* RecordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailView.swift; sourceTree = "<group>"; };
+		C387365D2B74439F0031E91A /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,10 @@
 			children = (
 				C307FD092B438C45008DC4FB /* SwiftUI_SwiftDataApp.swift */,
 				C307FD0B2B438C45008DC4FB /* ContentView.swift */,
+				C38736592B742ED80031E91A /* RecordRow.swift */,
+				C387365B2B7434CA0031E91A /* RecordDetailView.swift */,
+				C387365D2B74439F0031E91A /* RecordViewModel.swift */,
+				C38736532B72F30D0031E91A /* TextRecognitionViewModel.swift */,
 				C307FD0D2B438C46008DC4FB /* Assets.xcassets */,
 				C307FD0F2B438C46008DC4FB /* Preview Content */,
 				C307FD332B438CB6008DC4FB /* DataItem.swift */,
@@ -247,8 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C307FD342B438CB6008DC4FB /* DataItem.swift in Sources */,
+				C387365E2B74439F0031E91A /* RecordViewModel.swift in Sources */,
 				C307FD0C2B438C45008DC4FB /* ContentView.swift in Sources */,
+				C387365C2B7434CA0031E91A /* RecordDetailView.swift in Sources */,
 				C307FD0A2B438C45008DC4FB /* SwiftUI_SwiftDataApp.swift in Sources */,
+				C387365A2B742ED80031E91A /* RecordRow.swift in Sources */,
+				C38736542B72F30D0031E91A /* TextRecognitionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
